@@ -10,12 +10,12 @@ spring:
       username: ${ES_USERNAME}
       password: ${ES_PASSWORD}
 
-MYSQL_DB: dow_jones_1
-MYSQL_HOST: rm-2ze38k98df1h0jr93io.mysql.rds.aliyuncs.com
+MYSQL_DB: test
+MYSQL_HOST: localhost
 MYSQL_PORT: 3306
-MYSQL_USERNAME: easypay_db_admin
-MYSQL_PASSWORD: zHn9KkfZ31wudFMG
+MYSQL_USERNAME: root
+MYSQL_PASSWORD: 1qaz2wsx
 
-ES_URIS: 114.115.233.237:9200
-ES_USERNAME: elastic
-ES_PASSWORD: 5WASSui4CPrRJ1HUgVRa
+#ES_URIS: 114.115.233.237:9200
+#ES_USERNAME: elastic
+#ES_PASSWORD: 5WASSui4CPrRJ1HUgVRa
