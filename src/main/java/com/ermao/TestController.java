@@ -8,6 +8,7 @@ import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.ermao.domain.IdiomRepository;
 
@@ -35,5 +36,10 @@ public class TestController {
     }
     log.info("size:{}", cys.size());
     return "migrate_success";
+  }
+
+  @GetMapping("/idiom")
+  public Idiom findByName(@RequestParam("name") String name) {
+    return idiomRepository.findByName(name);
   }
 }
